@@ -1,0 +1,97 @@
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+  
+  /* Pagination items */
+  .pagination li {
+    margin: 0 0.25em;
+  }
+  
+  /* Pagination links */
+  .pagination a {
+    color: #007bff;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25em;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* Active page */
+  .pagination .active a {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Hover effects */
+  .pagination a:hover {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  /* Disabled links */
+  .pagination .disabled a {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  
+  /* Break (ellipsis) */
+  .pagination .break-me {
+    cursor: default;
+  }
+  /* Dropdown cho sắp xếp */
+.sort-dropdown {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    background-color: #fff;
+    color: #495057;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+/* Hiệu ứng hover cho dropdown */
+/* Định dạng cho phần tử chứa dropdown */
+.sapxepform{
+  display: inline-block; 
+  margin-left: 10px; 
+}
+
+/* Định dạng cho dropdown sắp xếp */
+select {
+  border: 1px solid #ced4da; /* Viền của dropdown */
+  border-radius: 0.25em; /* Bo góc của dropdown */
+  padding: 0.5em 0.75em; /* Khoảng cách bên trong dropdown */
+  background-color: #ffffff; /* Màu nền của dropdown */
+  color: #495057; /* Màu chữ của dropdown */
+  font-size: 1rem; /* Kích thước chữ */
+  line-height: 1.5; /* Chiều cao dòng */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển tiếp cho viền và bóng */
+  width: 200px; 
+  font-weight: 500;
+
+}
+
+select:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); 
+}
+
+/* Hiệu ứng khi chọn tùy chọn trong dropdown */
+select:focus {
+  border-color: #006013; 
+  box-shadow: 0 0 0 0.2rem  rgb(113, 74, 0); 
+  outline: none; 
+}
+
+  
